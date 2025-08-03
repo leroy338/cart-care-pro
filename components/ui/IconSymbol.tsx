@@ -1,11 +1,11 @@
 // Fallback for using MaterialIcons on Android and web.
 
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { SymbolWeight, SymbolViewProps } from 'expo-symbols';
+import { SymbolWeight } from 'expo-symbols';
 import { ComponentProps } from 'react';
 import { OpaqueColorValue, type StyleProp, type TextStyle } from 'react-native';
 
-type IconMapping = Record<SymbolViewProps['name'], ComponentProps<typeof MaterialIcons>['name']>;
+type IconMapping = Record<string, ComponentProps<typeof MaterialIcons>['name']>;
 type IconSymbolName = keyof typeof MAPPING;
 
 /**
@@ -18,6 +18,32 @@ const MAPPING = {
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
+  'directions-car': 'directions-car',
+  'menu': 'menu',
+  'light-mode': 'wb-sunny',
+  'dark-mode': 'nightlight-round',
+  'sports-golf': 'sports-golf',
+  'article': 'article',
+  'people': 'people',
+  'build': 'build',
+  'location-on': 'location-on',
+  'phone': 'phone',
+  'schedule': 'schedule',
+  'check-circle': 'check-circle',
+  'language': 'language',
+  'check': 'check',
+  'battery-charging-full': 'battery-charging-full',
+  'tire-repair': 'tire-repair',
+  'stop-circle': 'stop-circle',
+  'settings': 'settings',
+  'flash-on': 'flash-on',
+  'golf-course': 'golf-course',
+  'info': 'info',
+  'group': 'group',
+  'email': 'email',
+  'lock': 'lock',
+  'emoji-events': 'emoji-events',
+  'event': 'event',
 } as IconMapping;
 
 /**
